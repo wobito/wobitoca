@@ -1,4 +1,4 @@
-wobitoca
+Wobito.ca
 ========
 
-My Site
+My Personal Portfolio Site
