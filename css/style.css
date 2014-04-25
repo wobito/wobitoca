@@ -7219,6 +7219,9 @@ h1 {
   display: inline;
   box-shadow: 0 0 0 #fff;
   -webkit-transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 .port-item img:hover {
   box-shadow: 0 0 0 5px #01bb7f;
