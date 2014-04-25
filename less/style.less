@@ -3,33 +3,33 @@
 //#01bb7f
 @wobitoColor : rgba(1,187,127,1);
 @wobitoColorTrans : rgba(1,187,127,.92);
+@wobitoColorTransHalf: rgba(1,187,127,.5);
+@wobitoColorTransQuarter: rgba(1,187,127,.75);
+
 header {
 	position: fixed;
 	z-index: 10;
 	top:0px;
-	width: 100%;
-	color:#fff;
-	#gradient > .vertical(@start-color: @wobitoColorTrans; @end-color: darken(@wobitoColorTrans, 5%));
-	padding:20px;
-	height:40px;
+	width: 100%;	
 }
 #profile {
 	background:url("../img/img2.jpg") no-repeat fixed top center #333;
-	height:20em;
-	padding-top: 150px;
+	height:25em;
+	padding-top: 230px;
 	text-shadow:0px 0px 5px rgba(0,0,0,.78);
 
 	h1 { font-size: 48px; font-weight: 400;margin:0;padding: 0px; position: absolute; left:auto !important;  }
-	h3 { color:#fff; font-weight: 100; margin:-50px 0 0 0; padding: 0px; position: absolute; left:auto !important;  }
+	h3 { color:#fff; font-weight: 100; margin:-70px 0 0 0; padding: 0px; position: absolute; left:auto !important;  }
 	.profile-box {
-		float: right;
+		position:absolute; left:auto !important;
+		right: 40px !important;
 		
 		padding:15px;
 		background: rgba(0,0,0,.6);
 		#gradient > .vertical(@start-color: rgba(0,0,0,.05); @end-color: rgba(0,0,0,.9));
 		
 		color:#fff;
-		margin-top: -60px;
+		margin-top: -100px;
 		p {
 			margin: 0px;
 			text-align: right;
@@ -51,8 +51,24 @@ h1 {
 	h1 { margin: 0px; }
 }
 
+.port-item   {
+	text-align: center;
+	img {
+		width:200px;
+		display: inline;
+		box-shadow: 0 0 0 #fff;	
+		-webkit-transition: box-shadow 0.3s ease;         
+	}
+	img:hover {		
+		box-shadow: 0 0 0 5px @wobitoColor;
+	}
+	
+}
+
+
 .stellar-bg {
-	background:url('../img/img1.jpg') ;
+	// background:url('../img/img1.jpg') ;
+	background:url("../img/img1.jpg") no-repeat fixed top center #333;
 	
 	box-shadow:  inset 0  20px 10px -20px rgba(0,0,0,.8), 
                  inset 0 -20px 10px -20px rgba(0,0,0,.8);
@@ -61,5 +77,133 @@ h1 {
 		margin: 20px 0;
 		text-shadow: 0px 0px 15px rgba(0,0,0,.7);
 	}
+
+	.form-group label{
+		color: #fff;
+	}
+}
+
+.socials span {
+	font-size: 16px;
+}
+
+.navbar-green {
+  #gradient > .vertical(@start-color: @wobitoColorTrans; @end-color: darken(@wobitoColorTrans, 10%));
+  // background-color: @navbar-inverse-bg;
+  border-color: darken(@wobitoColor,10%);
+
+  .navbar-brand {
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken(@wobitoColorTransHalf, 20%);
+    }
+  }
+
+  .navbar-text {
+    color: #fff;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: #fff;
+		text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-hover-color;
+         background-color: darken(@wobitoColorTransHalf,20%);
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-active-color;
+        background-color: darken(@wobitoColorTransQuarter,20%);
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-disabled-color;
+        background-color: @navbar-inverse-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: darken(@wobitoColor, 15%);
+    &:hover,
+    &:focus {
+      background-color: darken(@wobitoColor, 10%);
+    }
+    .icon-bar {
+      background-color: @navbar-inverse-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken(@wobitoColor, 7%);
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-inverse-link-active-bg;
+        color: @navbar-inverse-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: @navbar-inverse-border;
+        }
+        .divider {
+          background-color: @navbar-inverse-border;
+        }
+        > li > a {
+          color: @navbar-inverse-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-inverse-link-hover-color;
+            background-color: @navbar-inverse-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-inverse-link-active-color;
+            background-color: @navbar-inverse-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-inverse-link-disabled-color;
+            background-color: @navbar-inverse-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-link {
+    color: @navbar-inverse-link-color;
+    &:hover {
+      color: @navbar-inverse-link-hover-color;
+    }
+  }
 
 }

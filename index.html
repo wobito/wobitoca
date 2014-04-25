@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Adrian Wobito's personal portfolio for web development and design. As well as other multimedia based design. (Print, Video, Audio, Mobile)">
+    <meta name="author" content="Adrian Wobito">
     <link rel="shortcut icon" href="favicon.ico">
 
     <title>Adrian Wobito - Web Developer &amp; Designer</title>
@@ -17,11 +17,38 @@
     <![endif]-->
     
   </head>
-  <body>	
+  <body id="home">	
 		<header>
-			<div class="container">
-				<h1>&nbsp;</h1>
-			</div>
+			<nav class="navbar navbar-green navbar-fixed-top" role="navigation">
+				<div class="container">
+    				<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#home">Adrian Wobito</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="mainNav nav navbar-nav">
+							<li class="active"><a href="#profile">Profile</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="http://twitter.com/wobito" target="_blank" class="socials"><span class="fa fa-twitter"></span></a></li>
+							<li><a href="http://facebook.com/wobito" target="_blank" class="socials"><span class="fa fa-facebook"></span></a></li>
+							<li><a href="http://instagram.com/wobito" target="_blank" class="socials"><span class="fa fa-instagram"></span></a></li>
+							<li><a href="http://ca.linkedin.com/in/wobito/" target="_blank" class="socials"><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>			
 		</header>
 		<section id="profile">
 			<div style="position:relative;">
@@ -35,15 +62,13 @@
 						<p>Twitter : @wobito</p>					
 					</div>
 				</div>
-			</div>
-			
-				
-			
+			</div>		
 		</section>
 		
-		<div class="text-box">
+		<section class="text-box" id="resume">
 			<div class="container">
 				<h1>What I Do <span class="small">| resume</span></h1>
+				<hr>
 				<div class="row">
 					<div class="col-sm-4">
 						<h3>Web Design</h3>
@@ -57,12 +82,10 @@
 						<h3>Custom Development</h3>
 						I develop and configure custom web applications with "manage it yourself" interface providing domain and host services.
 					</div>
-				</div>
-
-				
+				</div>				
 			</div>
-		</div>
-		<div class="stellar-bg" data-stellar-background-ratio="0.5">
+		</section>
+		<section class="stellar-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
@@ -86,25 +109,136 @@
 				<p><a href="" class="btn btn-green">Download My Resume</a></p>
 			</div>
 
-		</div>
-		<div>
+		</section>
+		<section class="text-box" id="portfolio">
 			<div class="container">
 				<h1>What I Have Done So Far <span class="small">| portfolio</span></h1>
+				<hr>
 				<div class="row">
-					<div class="col-sm-3">
-						<img src="img/portfolio/coreChairBanner.jpg" alt="" class="img-circle">
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/coreChairBanner.jpg" alt="" class="img-circle">	
+							<h4>CoreChair Tradeshow Banner</h4>	
+						</div>
 					</div>
-					<div class="col-sm-3"><img src="/img/portfolio/coreChairBanner.jpg" alt="" class="img-circle"></div>
-					<div class="col-sm-3"><img src="img/portfolio/coreChairBanner.jpg" alt="" class="img-circle"></div>
-					<div class="col-sm-3"><img src="img/portfolio/coreChairBanner.jpg" alt="" class="img-circle"></div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/wobitoGems.jpg" alt="" class="img-circle">
+							<h4>Wobito Gems Website</h4>	
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/cpRegistrationApp.jpg" alt="" class="img-circle">
+							<h4>Event Registration App (iOS)</h4>	
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/wobitoGemSnowflakeVideo.jpg" alt="" class="img-circle">
+							<h4>Wobito Snowflake Video</h4>								
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/wobitoGemSnowflakeVideo2.jpg" alt="" class="img-circle">
+							<h4>TVSN Wobito Snowflake Video</h4>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/footballManager.jpg" alt="" class="img-circle">
+							<h4>Football Managr Website</h4>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/wssc.jpg" alt="" class="img-circle">
+							<h4>WSSC Website</h4>							
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/craigProctor.jpg" alt="" class="img-circle">
+							<h4>Craig Proctor Website</h4>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/onlineQuantumLeap.jpg" alt="" class="img-circle">
+							<h4>Online Quantum Leap Portal</h4>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/cpCoaching.jpg" alt="" class="img-circle">
+							<h4>Craig Proctor Coaching Portal</h4>					
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/cannounAirways.jpg" alt="" class="img-circle">
+							<h4>Cannoun Airways</h4>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="port-item">
+							<img src="img/portfolio/musicManiacs.jpg" alt="" class="img-circle">
+							<h4>Metal Maniacs</h4>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<section id="contact" class="stellar-bg" data-stellar-background-ratio="0.1">
+			<div class="container">
+				<h1>Am I available for hire? <span class="small">| contact me</span></h1>
+				<hr>
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="form-group">
+							<label>Name:</label>
+							<input type="text" name="name" class="form-control">
+						</div>		
+						<div class="form-group">
+							<label>Email:</label>
+							<input type="text" name="email" class="form-control">
+						</div>		
+						<div class="form-group">
+							<label>Phone:</label>
+							<input type="text" name="phone" class="form-control">
+						</div>		
+						<div class="form-group">
+							<label>Message:</label>
+							<textarea name="message" class="form-control" rows="10"></textarea>
+						</div>		
+						<div class="form-group">
+							<button class="btn btn-green">Send Message</button>
+						</div>						
+					</div>
+					<div class="col-sm-4">
+						<p>Email : adrian@wobito.ca</p>
+						<p>Phone : +1-647-890-4638</p>					
+						<p>Twitter : @wobito</p>
+					</div>
+				</div>				
+			</div>
+		</section>
 
   	<!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
